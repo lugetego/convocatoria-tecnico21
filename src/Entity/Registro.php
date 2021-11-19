@@ -91,7 +91,7 @@ class Registro
     public $solicitudFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $solicitudName;
 
@@ -112,7 +112,7 @@ class Registro
     public $cvFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $cvName;
 
@@ -133,7 +133,7 @@ class Registro
     public $comprobanteFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $comprobanteName;
 
@@ -154,7 +154,7 @@ class Registro
     public $cursoFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $cursoName;
 
@@ -175,7 +175,7 @@ class Registro
     public $ref1recomFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $ref1recomName;
 
@@ -196,7 +196,7 @@ class Registro
     public $ref2recomFile;
 
     /**
-     * @ORM\Column(type="string", length=50, nullable=true)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $ref2recomName;
 
