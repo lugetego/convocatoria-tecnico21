@@ -42,30 +42,30 @@ class RegistroType extends AbstractType
                 ],
             ])
             ->add('solicitudFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Carta solicitud'
             ])
             ->add('cvFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Currículum Vitae'
 
             ])
             ->add('comprobanteFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Comprobante oficial de grado'
 
             ])
             ->add('cursoFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Comprobantes'
 
             ])
             ->add('ref1recomFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Carta de recomendación 1'
             ])
             ->add('ref2recomFile', VichFileType::class, [
-                'required' => false,
+                'required' => true,
                 'label'=>'Carta de recomendación 2'
             ])
         ;
