@@ -52,3 +52,10 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.invalid-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
