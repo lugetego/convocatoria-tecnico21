@@ -14,7 +14,7 @@
             </ol>
         </nav>
 
-        <div class="card border-dark mt-5" style="max-width: 80%">
+        <div class="card border-dark mt-5" style="max-width: 100%">
             <div class="card-header">{{ registro.unidad }}</div>
             <div class="card-body text-dark">
                 <h5 class="card-title">{{ registro.nombre }} {{ registro.paterno }} {{ registro.materno }}</h5>
@@ -31,6 +31,9 @@
                     </li>
                     <li class="list-group-item"><i class="fas fa-file-pdf"></i>
                         <a href="{{ vich_uploader_asset(registro, 'cvFile') }}"  target="_blank">Currículum</a>
+                    </li>
+                    <li class="list-group-item"><i class="fas fa-file-pdf"></i>
+                        <a href="{{ vich_uploader_asset(registro, 'comprobanteFile') }}"  target="_blank">Currículum</a>
                     </li>
                     <li class="list-group-item"><i class="fas fa-file-pdf"></i>
                         <a href="{{ vich_uploader_asset(registro, 'ref1recomFile') }}"  target="_blank">Recomendación 1</a>
