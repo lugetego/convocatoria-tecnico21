@@ -6,8 +6,9 @@
  */
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
-// const $ = require('jquery');
-require('bootstrap/dist/js/bootstrap.bundle');
+//const $ = require('jquery');
+
+//require('bootstrap/dist/js/bootstrap.bundle');
 require( 'datatables.net-bs5' )();
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
