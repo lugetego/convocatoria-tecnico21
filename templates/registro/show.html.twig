@@ -1,9 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Solicitud{% endblock %}
-{% block stylesheets %}
-    {{ parent() }}
-{% endblock %}
+
 
 {% block body %}
     <div class="container mt-3">
@@ -49,26 +47,26 @@
         </div>
 
 
-        <a href="{{ path('registro_edit', {'slug': registro.slug}) }}">edit</a>
 
-        {{ include('registro/_delete_form.html.twig') }}
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-action="modal-form#openModal"
-                 data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
+{#        <a href="{{ path('registro_edit', {'slug': registro.slug}) }}">edit</a>#}
 
-        <div class="container-fluid mt-4">
-            <div class="d-flex flex-row">
-                <div {{ stimulus_controller('modal-form', {
-                    formUrl: path('registro_show',{ 'slug':registro.slug})
-                }) }}>
-                    {{ include('registro/_modal.html.twig', {
-                        modalTitle: 'Modificar solicitud',
-                    }) }}
-                </div>
-            </div>
-        </div>
+{#        {{ include('registro/_delete_form.html.twig') }}#}
+
+{#        <div class="d-flex flex-row">#}
+{#            <div {{ stimulus_controller('modal-form', {#}
+{#                formUrl: path('registro_edit', {'slug': registro.slug})#}
+{#            }) }}>#}
+{#                <button#}
+{#                        class="btn btn-primary btn-sm"#}
+{#                        data-action="modal-form#openModal"#}
+{#                >Add+</button>#}
+{#                {{ include('registro/_modal.html.twig', {#}
+{#                    modalTitle: 'Modificar solicitud',#}
+{#                }) }}#}
+{#            </div>#}
+{#        </div>#}
+
     </div>
 
 {% endblock %}
+
