@@ -6,7 +6,14 @@
 {% block body %}
     <div class="container bg-light">
         <main>
-            <div class="py-3">
+
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading">Recepción de documentos cerrada</h4>
+                <hr>
+                <p>Fecha límite para la recepción de documentos: 14 de enero de 2022.</p>
+            </div>
+
+            {#<div class="py-3">
                 <h2>Instrucciones</h2>
                 <p class="lead">
                 <ul class="list-group list-group-flush ">
@@ -18,7 +25,7 @@
                 </ul>
                 </p>
             </div>
-                    {{ include('registro/_form.html.twig') }}
+                    {{ include('registro/_form.html.twig') }}#}
         </main>
 
         <footer class="my-2 pt-2 text-muted text-center text-small">
